@@ -1,0 +1,22 @@
+.container {
+	@extend %post;
+	max-width: $size__max-width;
+	// Set max-width here
+}
+
+.content-area {
+	@include span-columns(8);
+}
+
+.site-main {
+}
+
+.site-content .widget-area {
+	@include span-columns(4);
+	overflow: hidden;
+}
+
+.site-footer {
+	@include span-columns(12);
+	clear: both;
+}
